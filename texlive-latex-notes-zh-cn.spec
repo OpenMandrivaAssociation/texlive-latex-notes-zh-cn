@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/latex-notes-zh-cn
+# catalog-date 2009-11-09 22:53:30 +0100
+# catalog-license lppl1.3
+# catalog-version 1.20
 Name:		texlive-latex-notes-zh-cn
 Version:	1.20
 Release:	1
@@ -75,6 +81,7 @@ layout).
 %doc %{_texmfdistdir}/doc/generic/latex-notes-zh-cn/src/preface.tex
 %doc %{_texmfdistdir}/doc/generic/latex-notes-zh-cn/src/reading.bib
 %doc %{_texmfdistdir}/doc/generic/latex-notes-zh-cn/src/tables.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -85,3 +92,5 @@ layout).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
