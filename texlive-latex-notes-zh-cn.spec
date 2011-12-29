@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-notes-zh-cn
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The document is an introduction to TeX/LaTeX, in Chinese. It
@@ -81,7 +79,6 @@ layout).
 %doc %{_texmfdistdir}/doc/generic/latex-notes-zh-cn/src/preface.tex
 %doc %{_texmfdistdir}/doc/generic/latex-notes-zh-cn/src/reading.bib
 %doc %{_texmfdistdir}/doc/generic/latex-notes-zh-cn/src/tables.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -92,5 +89,3 @@ layout).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
