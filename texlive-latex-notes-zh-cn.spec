@@ -6,7 +6,7 @@
 # catalog-version 1.20
 Name:		texlive-latex-notes-zh-cn
 Version:	1.20
-Release:	9
+Release:	10
 Summary:	Chinese Introduction to TeX and LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-notes-zh-cn
