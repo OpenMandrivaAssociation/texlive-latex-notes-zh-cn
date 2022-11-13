@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/latex-notes-zh-cn
-# catalog-date 2009-11-09 22:53:30 +0100
-# catalog-license lppl1.3
-# catalog-version 1.20
 Name:		texlive-latex-notes-zh-cn
-Version:	1.20
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Chinese Introduction to TeX and LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-notes-zh-cn
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-notes-zh-cn.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-notes-zh-cn.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-notes-zh-cn.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-notes-zh-cn.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -82,24 +76,10 @@ layout).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.20-2
-+ Revision: 753184
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.20-1
-+ Revision: 718825
-- texlive-latex-notes-zh-cn
-- texlive-latex-notes-zh-cn
-- texlive-latex-notes-zh-cn
-- texlive-latex-notes-zh-cn
-
