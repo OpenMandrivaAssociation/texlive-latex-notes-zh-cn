@@ -1,6 +1,6 @@
 Name:		texlive-latex-notes-zh-cn
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Chinese Introduction to TeX and LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex-notes-zh-cn
